@@ -23,6 +23,10 @@ Demo
 - Add WiFiManager for manage SSID easily.
 - Switch color wheel interface for more function or control.
 
+## RGB strip
+
+My RGB strip has 30 leds and 2 meters long. When I checked power consumption with maximum brightness, it showed around 900mA. Therefore, each channel draws around 300mA at peak. 2N2222 transistor might be good enough for this project. But, more accurate calcaulation would be necessary for safety. And value of resistors in the schematic is related to the brightness of the led. After test, I removed them to make it a little bit brighter.
+
 Any suggestions will be welcomed.
 
 Hope you enjoy it.
