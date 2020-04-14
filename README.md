@@ -1,6 +1,6 @@
 # ALED
 
-ALED is a platform to control "unaddressable" RGB led strip. After reading about WLED project, I found out that WLED is for "addressable" RGB led strip. That is why I started this project.
+ALED is a platform to control "unaddressable" RGB led strip. After reading about WLED project, I found out that WLED is for "addressable" RGB led strip. So, I started this project naturally to support "unaddressable" RGB led strip.
 
 ## Current status
 
