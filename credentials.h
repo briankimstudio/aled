@@ -1,5 +1,5 @@
 /* 
- *  WIFI credentials
+ * WIFI credentials
  *  
  */
 #define SSID "ssid"
