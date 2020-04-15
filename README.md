@@ -1,20 +1,47 @@
 # ALED
 
-ALED is a platform to control "unaddressable" RGB LED strip. After reading about WLED project, I found out that WLED is for an "addressable" RGB LED strip. So, I started this project naturally to support an "unaddressable" RGB led strip.
+ALED is a platform to control an **unaddressable** RGB LED strip. After reading about WLED project, I found out that WLED is for an **addressable** RGB LED strip. So, I started this project naturally to support an **unaddressable** RGB led strip.
+
+## Required parts
+
+### Hardware
+
+- ESP32
+- RGB LED strip(**unaddressable**). It must have 4 pins(+,R,G,B).
+- 2N2222 transistor * 3 (Any NPN transistor would be ok as long as it can handle at least 300mA)
+- Resistor * 3 (Optional)
+
+### Software
+
+- Arduino IDE
+- ESP32 filesystem uploader https://github.com/me-no-dev/arduino-esp32fs-plugin
+- ALED source code
+
+## How to install
+
+1. Upload sketch data using ESP32 filesystem uploader
+2. Upload sketch in Arduino IDE
+3. Reset ESP32 and wait until it shows IP address in Arduino IDE's serial monitor
+4. Connect to ESP32 with IP address on web browser
+5. Control LED's color using color wheel
 
 ## Current status
 
 A user can control the LED strip via ESP32 web interface.
 
+## Wiring diagram
+
 The schematic is pretty simple. It uses 3 2N2222 transistors to connect RGB strip to ESP32
 
 ![Schematic](https://github.com/briankimstudio/aled/blob/master/schematic.png)
+
+## Web interface
 
 For the color wheel, it uses https://github.com/jweir/colorwheel library.
 
 ![Web interface](https://github.com/briankimstudio/aled/blob/master/aled_web_interface.png)
 
-Demo
+## Demo
 
 ![Demo](https://github.com/briankimstudio/aled/blob/master/aled_demo.gif)
 
