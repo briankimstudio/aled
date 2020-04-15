@@ -19,7 +19,17 @@ ALED is a platform to control an **unaddressable** RGB LED strip. After reading 
 
 ## How to install
 
-1. Upload sketch data using ESP32 filesystem uploader
+1. Upload sketch data using ESP32 filesystem uploader. And create credentials.h file in sketch folder then modify values for SSID, PASSWORD like this;
+
+```
+/* 
+ * WIFI credentials
+ * 
+ */
+#define SSID "SSID OF MY ROUTER"
+#define PASSWORD "PASSWORD OF MY ROUTER"
+```
+
 2. Upload sketch in Arduino IDE
 3. Reset ESP32 and wait until it shows IP address in Arduino IDE's serial monitor
 4. Connect to ESP32 with IP address on web browser
