@@ -26,9 +26,9 @@ int pos4 = 0;
 String header;
 
 // Red, green, and blue pins for PWM control
-const int redPin = 14;     
+const int redPin   = 12;     
 const int greenPin = 13;   
-const int bluePin = 12;    
+const int bluePin  = 14;    
 
 // Setting PWM frequency, channels and bit resolution
 const int freq = 5000;
