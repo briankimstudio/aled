@@ -27,6 +27,10 @@ Demo
 
 My RGB strip has 30 leds and 2 meters long. When I checked power consumption with maximum brightness, it showed around 900mA. Therefore, each channel draws around 300mA at peak. 2N2222 transistor might be good enough for this project. But, more accurate calcaulation would be necessary for safety. And value of resistors in the schematic is related to the brightness of the led. After test, I removed them to make it a little bit brighter.
 
+Additionally, be aware of that the RGB pin's layout on the strip may not as accurate as you might think. As shown below, it labeled G R B(from top), but, after test, it turned out B R G(from top). Make sure the correct layout of your strip and modify PIN assignment in the source code accordingly. 
+
+![RGB strip](https://github.com/briankimstudio/aled/blob/master/rgb_led_strip.jpg)
+
 Any suggestions will be welcomed.
 
 Hope you enjoy it.
